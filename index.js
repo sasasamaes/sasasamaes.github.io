@@ -19,7 +19,7 @@ $(function () {
 				.replace(':name:', repo.name)
 				.replace(':enlace:', repo.homepage)
 				.replace(':git:', repo.svn_url)
-				.replace(':descripcion:', repo.descripcion);
+				.replace(':descripcion:', repo.description);
 
 			var $post = $(post);
 			$contenedor.append($post.show())
