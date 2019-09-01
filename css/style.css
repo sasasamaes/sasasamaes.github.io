@@ -62,6 +62,9 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+li{
+	list-style: none;
+}
 
 /*---------------------
 	Helper CSS
@@ -74,7 +77,7 @@ ol {
 .section-title h2 {
 	display: inline-block;
 	position: relative;
-	margin-bottom: 110px;
+	margin-bottom: 60px;
 	padding-bottom: 2px;
 	line-height: normal;
 }
@@ -426,11 +429,16 @@ ol {
 	color: #808181;
 	margin-bottom: 15px;
 }
+.hero-info ul li a {
+	font-size: 24px;
+	color: #808181;
+	margin-bottom: 15px;
+}
 
 .hero-info ul li span {
 	color: #40424a;
 	display: inline-block;
-	min-width: 220px;
+	min-width: 190px;
 }
 
 .hero-info ul li:last-child {
