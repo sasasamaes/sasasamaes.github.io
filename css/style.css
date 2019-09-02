@@ -1290,6 +1290,9 @@ li{
 
 /* Tablet :768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.skills ul{
+		margin-bottom: 2rem;
+	}
 	.portfolio-warp {
 		padding: 0;
 	}
@@ -1342,6 +1345,9 @@ li{
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+	.skills ul{
+		margin-bottom: 2rem;
+	}
 	.icon-box {
 		margin-right: 30px;
 		text-align: left;
@@ -1412,6 +1418,9 @@ li{
 
 /* small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+	.skills ul{
+		margin-bottom: 2rem;
+	}
 	.hero-text h2 {
 		font-size: 50px;
 	}
