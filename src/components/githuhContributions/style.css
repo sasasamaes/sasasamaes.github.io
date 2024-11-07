@@ -30,15 +30,15 @@
 }
 .pr-item p{
   margin: 20px 0 20px 0;
-  color: #222;
+  color: var( --text-color-4);
   font-weight: 500;
 }
 .pr-item span{
-  color: #222;
+  color:  var(--text-color-4);
   font-weight: 100;
 }
 .pr-item a {
-  color: #f9f9f9;
+  color:  var(--text-color);
   text-decoration: none;
   background: var(--bg-color);
   border: solid 1px var(--text-color);
