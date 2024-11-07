@@ -31,6 +31,11 @@
 .pr-item p{
   margin: 20px 0 20px 0;
   color: #222;
+  font-weight: 500;
+}
+.pr-item span{
+  color: #222;
+  font-weight: 100;
 }
 .pr-item a {
   color: #f9f9f9;

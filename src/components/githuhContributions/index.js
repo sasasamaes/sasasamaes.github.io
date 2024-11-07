@@ -18,8 +18,8 @@ export const GithubContributions = () => {
         console.error('Error fetching pull requests:', error)
       }
     }
-
     fetchPullRequests()
+
   }, [username])
 
   return (
@@ -33,9 +33,9 @@ export const GithubContributions = () => {
               <h3>{pr.title}</h3>
               <p>
                 Repository:{' '}
-                <a href={pr.repository_url}>
+                <span>
                   {pr.repository_url.split('/').pop()}
-                </a>
+                </span>
               </p>
               <a href={pr.html_url} target="_blank" rel="noopener noreferrer">
                 View Pull Request
