@@ -44,3 +44,14 @@
 .repo-item a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .github-repos {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .repo-item {
+    width: 100%;
+  }
+}
