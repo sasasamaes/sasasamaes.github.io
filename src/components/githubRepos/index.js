@@ -20,10 +20,10 @@ export const GithubRepos = () => {
   }, []);
 
   return (
-    <div className="github-repos-container">
+    <div className="github-repos-container mt-5">
     <h2>Github repositories</h2>
   
-    <div className="github-repos">
+    <div className="github-repos mt-3">
       
       {repos.map((repo) => (
         <div key={repo.id} className="repo-item">

@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 import { GithubRepos } from "../../components/githubRepos"; // Import the component
-
+import { GithubContributions } from "../../components/githuhContributions"; // Import the component
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -33,6 +33,7 @@ export const Portfolio = () => {
             );
           })}
         </div>
+        <GithubContributions />
         <GithubRepos />
       </Container>
     </HelmetProvider>
