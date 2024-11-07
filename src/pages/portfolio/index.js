@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { GithubRepos } from "../../components/githubRepos"; // Import the component
 
 export const Portfolio = () => {
   return (
@@ -32,6 +33,7 @@ export const Portfolio = () => {
             );
           })}
         </div>
+        <GithubRepos />
       </Container>
     </HelmetProvider>
   );
