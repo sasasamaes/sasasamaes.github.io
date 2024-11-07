@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/sasasamaes.github.io/static/css/main.b1c7c414.css",
-    "main.js": "/sasasamaes.github.io/static/js/main.25f300ef.js",
-    "index.html": "/sasasamaes.github.io/index.html"
+    "main.css": "/static/css/main.b1c7c414.css",
+    "main.js": "/static/js/main.a209db9f.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.b1c7c414.css",
-    "static/js/main.25f300ef.js"
+    "static/js/main.a209db9f.js"
   ]
 }
