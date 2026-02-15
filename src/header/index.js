@@ -2,12 +2,15 @@
 import { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import Link from "next/link";
-import { logotext, socialprofils } from "@/content_option";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import Themetoggle from "@/components/themetoggle";
+import LanguageToggle from "@/components/languagetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState(true);
+  const t = useTranslations();
+
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
@@ -17,8 +20,9 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" href="/">{logotext}</Link>
+          <Link className="navbar-brand nav_ac" href="/">{t("logotext")}</Link>
           <div className="d-flex align-items-center">
+            <LanguageToggle />
             <Themetoggle />
             <button className="menu__button nav_ac" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
@@ -30,22 +34,22 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item"><Link onClick={handleToggle} href="/" className="my-3">Home</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/portfolio" className="my-3">Portfolio</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/about" className="my-3">About</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/blog" className="my-3">Blog</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/contact" className="my-3">Contact</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} href="/" className="my-3">{t("nav.home")}</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} href="/portfolio" className="my-3">{t("nav.portfolio")}</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} href="/about" className="my-3">{t("nav.about")}</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} href="/blog" className="my-3">{t("nav.blog")}</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} href="/contact" className="my-3">{t("nav.contact")}</Link></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              <a href={socialprofils.facebook}>Facebook</a>
-              <a href={socialprofils.github}>Github</a>
-              <a href={socialprofils.twitter}>Twitter</a>
+              <a href={t("social.facebook")}>Facebook</a>
+              <a href={t("social.github")}>Github</a>
+              <a href={t("social.twitter")}>Twitter</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">{t("footer.copyright")}</p>
           </div>
         </div>
       </header>
