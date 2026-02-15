@@ -1,38 +1,78 @@
-### Description
+# Francisco Campos Diaz - Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+Personal portfolio and blog built with Next.js 14, featuring multi-language support (EN/ES), blog integration with Contentful CMS, and Google AdSense.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
-
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+### [Live Preview](https://sasasamaes.github.io)
 
 ### Features
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
+- **Next.js 14 App Router** with static site generation
+- **Multi-language (i18n)** — English and Spanish with prefixed routes (`/en/`, `/es/`)
+- **Blog** powered by Contentful headless CMS
+- **Google AdSense** integration
+- **Dark/Light theme** with animated sun/moon toggle
+- **Responsive** design with React-Bootstrap
+- **Contact form** with EmailJS
+- **GitHub repos & contributions** displayed dynamically
+- **SEO** with hreflang alternates and sitemap generation
+
+### Tech Stack
+
+- Next.js 14 (App Router)
+- next-intl (internationalization)
+- Contentful (headless CMS)
 - React-Bootstrap
-- Edit Content From One Place
+- next-sitemap
+- EmailJS
+- Vercel (deployment)
 
 ### Setup
 
-Get the code
+Clone the repository
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+```bash
+git clone https://github.com/sasasamaes/sasasamaes.github.io.git
+cd sasasamaes.github.io
+```
 
-<pre>yarn install</pre>
+Install dependencies
 
+```bash
+corepack yarn install
+```
 
-Start the server
+Create `.env.local` with your keys
 
-<pre>yarn start</pre>
+```
+CONTENTFUL_SPACE_ID=your_space_id
+CONTENTFUL_ACCESS_TOKEN=your_access_token
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-XXXXXXX
+```
 
-### More
+Start the dev server
 
-Modify pages content in  `src/content_option.js`.
+```bash
+corepack yarn dev
+```
 
-### Thanks
+Build for production
 
-If you like this portfolio template don't forget give it a ⭐ 
+```bash
+corepack yarn build
+```
+
+### Project Structure
+
+```
+src/app/[locale]/       App Router pages (per-locale)
+messages/en.json        English translations
+messages/es.json        Spanish translations
+src/components/         Reusable components
+src/i18n/               i18n routing, request config, navigation
+src/lib/contentful.js   Contentful CMS client
+src/middleware.js        Locale detection middleware
+```
+
+### Content
+
+All text content lives in `messages/en.json` and `messages/es.json`. Edit these files to update portfolio content in both languages.
