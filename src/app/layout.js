@@ -3,6 +3,7 @@ import "./globals.css";
 import Headermain from "@/header";
 import { Socialicons } from "@/components/socialicons";
 import ThemeProvider from "@/components/themetoggle/ThemeProvider";
+import AnimatedCursorWrapper from "@/components/AnimatedCursorWrapper";
 import Script from "next/script";
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ThemeProvider>
+          <AnimatedCursorWrapper />
           <Headermain />
           <div className="s_c">
             {children}

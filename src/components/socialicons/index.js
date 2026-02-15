@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./style.css";
 import {
@@ -12,7 +13,7 @@ import {
   FaTiktok,
   FaCircle
 } from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { socialprofils } from "@/content_option";
 
 const ICON_MAPPING = {
   default: FaCircle,
