@@ -1,10 +1,13 @@
 "use client";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslations } from "next-intl";
 import PostContent from "@/components/blog/PostContent";
 import AdBanner from "@/components/blog/AdBanner";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default function BlogPostClient({ post }) {
+  const t = useTranslations();
+
   return (
     <Container>
       <Row className="mb-5 mt-3 pt-md-3">
@@ -22,7 +25,7 @@ export default function BlogPostClient({ post }) {
           <AdBanner slot="YOUR_AD_SLOT_1" />
           <PostContent content={post.content} />
           <AdBanner slot="YOUR_AD_SLOT_2" />
-          <Link href="/blog" className="back-link">&larr; Back to Blog</Link>
+          <Link href="/blog" className="back-link">&larr; {t("blog.backToBlog")}</Link>
         </Col>
       </Row>
     </Container>

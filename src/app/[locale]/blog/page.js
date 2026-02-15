@@ -1,13 +1,21 @@
-import "./blog.css";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getAllPosts } from "@/lib/contentful";
+import "./blog.css";
 import BlogClient from "./BlogClient";
 
-export const metadata = {
-  title: "Blog | Francisco Campos Diaz",
-  description: "Articles about Web3, Blockchain, Full Stack Development, and more.",
-};
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("blog.pageTitle")} | ${t("meta.title")}`,
+    description: t("blog.description"),
+  };
+}
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   let posts = [];
   try {
     posts = await getAllPosts();

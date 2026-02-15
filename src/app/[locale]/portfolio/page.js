@@ -1,10 +1,17 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import PortfolioClient from "./PortfolioClient";
 
-export const metadata = {
-  title: "Portfolio | Francisco Campos Diaz",
-  description: "I'm a Full Stack Developer in love with Programming, Desing and Swim.",
-};
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("portfolio.pageTitle")} | ${t("meta.title")}`,
+    description: t("meta.description"),
+  };
+}
 
-export default function PortfolioPage() {
+export default async function PortfolioPage({ params }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <PortfolioClient />;
 }

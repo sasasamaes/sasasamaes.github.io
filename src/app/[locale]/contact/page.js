@@ -1,10 +1,17 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ContactClient from "./ContactClient";
 
-export const metadata = {
-  title: "Francisco Campos Diaz | Contact",
-  description: "I'm a Full Stack Developer in love with Programming, Desing and Swim.",
-};
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("contact.pageTitle")} | ${t("meta.title")}`,
+    description: t("meta.description"),
+  };
+}
 
-export default function ContactPage() {
+export default async function ContactPage({ params }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <ContactClient />;
 }

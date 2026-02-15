@@ -1,10 +1,17 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import HomeClient from "./HomeClient";
 
-export const metadata = {
-  title: "Francisco Campos Diaz",
-  description: "I'm a Full Stack Developer in love with Programming, Desing and Swim.",
-};
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+  };
+}
 
-export default function HomePage() {
+export default async function HomePage({ params }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <HomeClient />;
 }

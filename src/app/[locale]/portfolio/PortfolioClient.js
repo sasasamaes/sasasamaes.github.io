@@ -1,16 +1,19 @@
 "use client";
 import "./portfolio.css";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio } from "@/content_option";
+import { useTranslations } from "next-intl";
 import { GithubRepos } from "@/components/githubRepos";
 import { GithubContributions } from "@/components/githuhContributions";
 
 export default function PortfolioClient() {
+  const t = useTranslations();
+  const dataportfolio = t.raw("dataportfolio");
+
   return (
     <Container className="About-header">
       <Row className="mb-5 mt-3 pt-md-3">
         <Col lg="8">
-          <h1 className="display-4 mb-4">Portfolio</h1>
+          <h1 className="display-4 mb-4">{t("portfolio.pageTitle")}</h1>
           <hr className="t_border my-4 ml-0 text-left" />
         </Col>
       </Row>
@@ -20,7 +23,7 @@ export default function PortfolioClient() {
             <img src={data.img} alt="" />
             <div className="content">
               <p>{data.description}</p>
-              <a href={data.link}>view project</a>
+              <a href={data.link}>{t("portfolio.viewProject")}</a>
             </div>
           </div>
         ))}
