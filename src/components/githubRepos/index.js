@@ -1,6 +1,6 @@
+"use client";
 // src/components/GithubRepos.js
 import React, { useState, useEffect } from "react";
-import { RiH2 } from '../../../node_modules/react-icons/ri/index.esm';
 import "./style.css";
 
 export const GithubRepos = () => {
