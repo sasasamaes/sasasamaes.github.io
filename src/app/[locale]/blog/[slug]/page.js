@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
     title: `${post.title} | ${t("meta.title")}`,
     description: post.excerpt,
     openGraph: { title: post.title, description: post.excerpt, images: post.coverImage ? [post.coverImage] : [] },
+    alternates: {
+      languages: { en: `/en/blog/${slug}`, es: `/es/blog/${slug}` },
+    },
   };
 }
 
