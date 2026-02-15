@@ -1605,6 +1605,7 @@ __metadata:
   resolution: "react-portfolio@workspace:."
   dependencies:
     "@contentful/rich-text-react-renderer": "npm:^16.1.6"
+    "@contentful/rich-text-types": "npm:^17.2.5"
     bootstrap: "npm:^5.2.3"
     contentful: "npm:^11.10.3"
     emailjs-com: "npm:^3.2.0"
