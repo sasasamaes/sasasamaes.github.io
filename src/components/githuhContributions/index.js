@@ -1,30 +1,31 @@
-import React, { useState, useEffect } from 'react'
-import './style.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
+import "./style.css";
 
 export const GithubContributions = () => {
-  const [pullRequests, setPullRequests] = useState([])
-  const username = 'sasasamaes'
+  const [pullRequests, setPullRequests] = useState([]);
+  const username = "sasasamaes";
+  const t = useTranslations("portfolio");
 
   useEffect(() => {
-    // Fetch accepted pull requests from the GitHub API
     const fetchPullRequests = async () => {
       try {
         const response = await fetch(
           `https://api.github.com/search/issues?q=author:${username}+type:pr+is:merged+created:>=2024-01-01`,
-        )
-        const data = await response.json()
-        setPullRequests(data.items)
+        );
+        const data = await response.json();
+        setPullRequests(data.items);
       } catch (error) {
-        console.error('Error fetching pull requests:', error)
+        console.error("Error fetching pull requests:", error);
       }
-    }
-    fetchPullRequests()
-
-  }, [username])
+    };
+    fetchPullRequests();
+  }, [username]);
 
   return (
     <div className="github-contributions-container mt-5">
-      <h2>Accepted Pull Requests</h2>
+      <h2>{t("prsTitle")}</h2>
 
       <div className="github-contributions mt-3">
         {pullRequests.length > 0 ? (
@@ -32,20 +33,20 @@ export const GithubContributions = () => {
             <div key={pr.id} className="pr-item">
               <h3>{pr.title}</h3>
               <p>
-                Repository:{' '}
+                Repository:{" "}
                 <span>
-                  {pr.repository_url.split('/').pop()}
+                  {pr.repository_url.split("/").pop()}
                 </span>
               </p>
               <a href={pr.html_url} target="_blank" rel="noopener noreferrer">
-                View Pull Request
+                {t("viewPR")}
               </a>
             </div>
           ))
         ) : (
-          <p>No accepted pull requests found.</p>
+          <p>{t("noPRs")}</p>
         )}
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,0 +1,122 @@
+{
+  "logotext": "sasasamaes",
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Soy Francisco Campos Diaz",
+    "animated": {
+      "first": "Amo programar",
+      "second": "Desarrollo apps blockchain y Web3",
+      "third": "Soy Sensei en Dev.f"
+    },
+    "description": "Desarrollador Full Stack con experiencia en Web3, Blockchain, Next.js, TypeScript, Cairo y Solidity. Habil en la construccion de dApps, integracion de IA, y trabajo con MongoDB y PostgreSQL para soluciones escalables. Apasionado por crear experiencias digitales seguras e innovadoras.",
+    "yourImgUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFk2oVtP_WTNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666820900761?e=1736380800&v=beta&t=AA_Ia7gFpzb6vJt7Y5jWENh7LFtz74yjOx90CWlkWYk",
+    "btnPortfolio": "Mi Portafolio",
+    "btnContact": "Contactame"
+  },
+  "about": {
+    "pageTitle": "Acerca de mi",
+    "title": "Acerca de mi",
+    "aboutme": "Desarrollador Full Stack experimentado especializado en soluciones Web3 y Blockchain, con dominio de Next.js, TypeScript, Cairo y Solidity. Habil en el desarrollo de aplicaciones descentralizadas (dApps) y contratos inteligentes con un profundo conocimiento de los ecosistemas front-end y back-end. Solida experiencia en integracion de IA, mejorando aplicaciones con conocimientos basados en datos y automatizacion. Amplia experiencia con bases de datos como MongoDB y PostgreSQL, garantizando soluciones de almacenamiento robustas y escalables. Apasionado por aprovechar la tecnologia de vanguardia para construir experiencias digitales seguras e innovadoras.",
+    "workTimelineTitle": "Experiencia Laboral",
+    "skillsTitle": "Habilidades",
+    "servicesTitle": "Servicios"
+  },
+  "worktimeline": [
+    { "jobtitle": "Desarrollador Open Source", "where": "Only Dust", "url": "https://onlydust.com", "date": "2024" },
+    { "jobtitle": "Sensei", "where": "DEV.f", "url": "https://devf.mx", "date": "2019 - 2024" },
+    { "jobtitle": "Desarrollador Frontend", "where": "Elevar Salud", "url": "https://www.elevarsalud.com", "date": "2023 - 2024" },
+    { "jobtitle": "Desarrollador Full Stack", "where": "Arrenda", "url": "https://ziff.com.mx", "date": "2022 - 2023" },
+    { "jobtitle": "Desarrollador Frontend", "where": "Gamanza", "url": "https://gamanza.com", "date": "2019 - 2021" },
+    { "jobtitle": "Mentor Estudiantil", "where": "GDG Pura Vida", "url": "https://gdg.community.dev/gdg-pura-vida/", "date": "2020" },
+    { "jobtitle": "Desarrollador Frontend", "where": "CreativeDrive", "url": "https://www.linkedin.com/company/wearecd/posts/?feedView=all", "date": "2017 - 2019" }
+  ],
+  "skills": [
+    { "name": "Javascript", "value": 100 },
+    { "name": "React", "value": 90 },
+    { "name": "Next.js", "value": 90 },
+    { "name": "TypeScript", "value": 90 },
+    { "name": "Python", "value": 65 },
+    { "name": "Django", "value": 60 },
+    { "name": "Php", "value": 80 },
+    { "name": "Cairo", "value": 60 },
+    { "name": "PostgreSQL", "value": 60 },
+    { "name": "MongoDB", "value": 60 },
+    { "name": "Solidity", "value": 60 },
+    { "name": "UML", "value": 80 },
+    { "name": "Scrum", "value": 100 },
+    { "name": "Modelo Entidad", "value": 100 },
+    { "name": "IA", "value": 80 },
+    { "name": "StarkNet", "value": 60 },
+    { "name": "Open Source", "value": 70 }
+  ],
+  "services": [
+    { "title": "Web3 y Blockchain", "description": "Ofrezco servicios integrales de desarrollo Web3 y Blockchain, enfocados en crear aplicaciones descentralizadas (dApps) y contratos inteligentes seguros, escalables y faciles de usar. Con experiencia en Solidity, Cairo y frameworks modernos de blockchain, desarrollo soluciones para Ethereum, StarkNet y otras redes, incluyendo tokenizacion, NFTs y proyectos DeFi. Mis servicios garantizan experiencias digitales transparentes y optimizadas, guiando proyectos desde el concepto hasta el despliegue con un fuerte enfasis en seguridad, rendimiento y usabilidad en el mundo real." },
+    { "title": "Desarrollo Full Stack", "description": "Proporciono servicios de Desarrollo Full Stack enfocados en entregar aplicaciones web dinamicas, responsivas y escalables. Con experiencia en frameworks modernos como Next.js y TypeScript, creo experiencias de usuario fluidas en el front-end, mientras aseguro un manejo eficiente de datos y funcionalidad robusta en el back-end. Competente en bases de datos relacionales y no relacionales como PostgreSQL y MongoDB, construyo soluciones que priorizan la seguridad, el rendimiento y la usabilidad. Mi enfoque se basa en aprovechar las mejores practicas y las tecnologias mas recientes para entregar soluciones digitales innovadoras adaptadas a las necesidades unicas de cada proyecto." },
+    { "title": "Sensei", "description": "Como Sensei en DEV.F, guio y oriento a desarrolladores aspirantes, compartiendo conocimientos y experiencia practica en tecnologias Full Stack y Web3. A traves de talleres, revisiones de codigo y retroalimentacion personalizada, ayudo a los estudiantes a construir una base tecnica solida y habilidades practicas en areas como JavaScript, Next.js, TypeScript y Blockchain. Mi objetivo es empoderar a los desarrolladores para resolver problemas del mundo real de manera efectiva, fomentar un ambiente de aprendizaje colaborativo e inspirar el crecimiento continuo y la innovacion en la comunidad tecnologica." }
+  ],
+  "dataportfolio": [
+    { "title": "Only Dust", "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png", "description": "Cada mes, participo en hackathons de Only Dust, contribuyendo a proyectos blockchain de codigo abierto, construyendo soluciones Web3 y colaborando para enfrentar desafios del mundo real en tecnologia descentralizada.", "link": "https://onlydust.com" },
+    { "title": "ETH Pura Vida Hackaton", "img": "https://i.postimg.cc/Y9t7XtnJ/Screenshot-2024-11-06-at-1-09-02-AM.png", "description": "Crear una herramienta financiera descentralizada que facilite el acceso a fideicomisos para agricultores y trabajadores agricolas en general en Costa Rica, a traves de los recursos proporcionados por la tecnologia BlockChain.", "link": "https://devfolio.co/projects/revolutionary-farmers-b88c" },
+    { "title": "DEV.f", "img": "https://i.postimg.cc/Dwhx4mSk/devf.png", "description": "Como Sensei en DEV.F, guio a desarrolladores aspirantes, ofreciendo orientacion en tecnologias Full Stack y Web3. A traves de talleres y revisiones de codigo, ayudo a los estudiantes a desarrollar habilidades tecnicas solidas en JavaScript, html, js, css.", "link": "https://devf.mx" },
+    { "title": "StarkHack Hackathon", "img": "https://i.postimg.cc/g2KNVdhw/starkhack.png", "description": "Participe en un hackathon en linea donde desarrollamos un producto para una academia enfocada en aprender Starknet y Cairo.", "link": "https://ethglobal.com/showcase/ninja-academy-hvt1d" },
+    { "title": "Elevar Salud", "img": "https://i.postimg.cc/ZRWHzdM3/elevar-Salud.png", "description": "Contribui en todas las etapas del ciclo de vida del desarrollo de software, ayudando a disenar y desarrollar dos aplicaciones clave de telemedicina para pacientes y medicos usando React, Next.js y TypeScript.", "link": "https://www.elevarsalud.com" },
+    { "title": "Arrenda", "img": "https://i.postimg.cc/BZdYsmsv/arrenda.png", "description": "En Arrenda, mi rol abarco tanto el desarrollo frontend como backend, donde contribui al diseno y creacion de modulos usando Node.js y Vue.js.", "link": "https://ziff.com.mx/" },
+    { "title": "Gamanza", "img": "https://i.postimg.cc/q7MQQYc1/gamanza.png", "description": "Desarrolle sistemas CRM especializados para la industria de casinos, desde el diseno hasta la implementacion, mejorando la interaccion con el cliente y optimizando las operaciones.", "link": "https://gamanza.com/real-time-crm/" }
+  ],
+  "contact": {
+    "pageTitle": "Contacto",
+    "getInTouch": "Ponte en contacto",
+    "email": "hey@francampos.me",
+    "phone": "(+506)7219-9678",
+    "description": "Ponte en contacto conmigo para colaboraciones, consultas o cualquier consulta. Ya sea que necesites ayuda con desarrollo Full Stack, soluciones Web3 o proyectos blockchain, estoy aqui para ayudarte. Escribeme y discutamos como podemos trabajar juntos para dar vida a tus ideas!",
+    "namePlaceholder": "Nombre",
+    "emailPlaceholder": "Correo electronico",
+    "messagePlaceholder": "Mensaje",
+    "sendButton": "Enviar",
+    "sending": "Enviando...",
+    "successMessage": "EXITO! Gracias por tu mensaje",
+    "failMessage": "Error al enviar!"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "description": "Articulos sobre Web3, Blockchain, Desarrollo Full Stack y mas.",
+    "noPosts": "Aun no hay publicaciones. Vuelve pronto!",
+    "readMore": "Leer mas",
+    "backToBlog": "Volver al Blog"
+  },
+  "portfolio": {
+    "pageTitle": "Portafolio",
+    "viewProject": "ver proyecto",
+    "reposTitle": "Repositorios de Github",
+    "prsTitle": "Pull Requests Aceptados",
+    "viewRepo": "Ver Repositorio",
+    "viewPR": "Ver Pull Request",
+    "noPRs": "No se encontraron pull requests aceptados.",
+    "noDescription": "Sin descripcion disponible"
+  },
+  "social": {
+    "github": "https://github.com/sasasamaes",
+    "facebook": "https://facebook.com/sasasamaes",
+    "linkedin": "https://linkedin.com/in/francisco-campos-5225b842/",
+    "twitter": "https://x.com/sasasamaes"
+  },
+  "footer": {
+    "copyright": "copyright __ sasasamaes",
+    "followMe": "Sigueme"
+  },
+  "emailjs": {
+    "serviceId": "service_id",
+    "templateId": "template_id",
+    "userId": "user_id"
+  },
+  "meta": {
+    "title": "Francisco Campos Diaz",
+    "description": "Soy un Desarrollador Full Stack apasionado por la Programacion, el Diseno y la Natacion."
+  }
+}
