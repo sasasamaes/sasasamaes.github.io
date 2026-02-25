@@ -46,7 +46,7 @@ export default async function LocaleLayout({ children, params }) {
         </NextIntlClientProvider>
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3451020767524769"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />

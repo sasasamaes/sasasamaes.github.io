@@ -19,7 +19,7 @@ export default function AdBanner({ slot, format = "auto", responsive = true }) {
         className="adsbygoogle"
         ref={adRef}
         style={{ display: "block" }}
-        data-ad-client="ca-pub-XXXXXXX"
+        data-ad-client="ca-pub-3451020767524769"
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive={responsive ? "true" : "false"}
