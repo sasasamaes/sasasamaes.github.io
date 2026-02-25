@@ -990,7 +990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.12.2":
+"axios@npm:^1.12.2, axios@npm:^1.13.5":
   version: 1.13.5
   resolution: "axios@npm:1.13.5"
   dependencies:
@@ -1136,6 +1136,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"contentful-management@npm:^11.72.1":
+  version: 11.72.1
+  resolution: "contentful-management@npm:11.72.1"
+  dependencies:
+    "@contentful/rich-text-types": "npm:^16.6.1"
+    axios: "npm:^1.13.5"
+    contentful-sdk-core: "npm:^9.4.2"
+    fast-copy: "npm:^3.0.0"
+    globals: "npm:^15.15.0"
+  checksum: 10c0/1e4605c17d018b2d3f54fa0f383a542365ad1ee3e5d7b1098a07cb37dd1adb084c533c1dd3cb19483c961ad709ed4981fb87871c7f5759445d8cce059606a79a
+  languageName: node
+  linkType: hard
+
 "contentful-resolve-response@npm:^1.9.4":
   version: 1.9.5
   resolution: "contentful-resolve-response@npm:1.9.5"
@@ -1243,6 +1256,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^17.3.1":
+  version: 17.3.1
+  resolution: "dotenv@npm:17.3.1"
+  checksum: 10c0/c78e0c2d5a549c751e544cc60e2b95e7cb67e0c551f42e094d161c6b297aa44b630a3c2dcacf5569e529a6c2a6b84e2ab9be8d37b299d425df5a18b81ce4a35f
+  languageName: node
+  linkType: hard
+
 "dunder-proto@npm:^1.0.1":
   version: 1.0.1
   resolution: "dunder-proto@npm:1.0.1"
@@ -1340,7 +1360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-copy@npm:^3.0.2":
+"fast-copy@npm:^3.0.0, fast-copy@npm:^3.0.2":
   version: 3.0.2
   resolution: "fast-copy@npm:3.0.2"
   checksum: 10c0/02e8b9fd03c8c024d2987760ce126456a0e17470850b51e11a1c3254eed6832e4733ded2d93316c82bc0b36aeb991ad1ff48d1ba95effe7add7c3ab8d8eb554a
@@ -1572,6 +1592,13 @@ __metadata:
     minipass: "npm:^7.1.2"
     path-scurry: "npm:^2.0.0"
   checksum: 10c0/333dc5c40ca0e50400465d8f5c45aa7cdd32580c4d1a4c502dfb4fb9c469a936b8e0c6bbd09cd6353fd05982e48d7f79e819159a36fb3e0a41ee722607bc11a9
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.15.0":
+  version: 15.15.0
+  resolution: "globals@npm:15.15.0"
+  checksum: 10c0/f9ae80996392ca71316495a39bec88ac43ae3525a438b5626cd9d5ce9d5500d0a98a266409605f8cd7241c7acf57c354a48111ea02a767ba4f374b806d6861fe
   languageName: node
   linkType: hard
 
@@ -2466,6 +2493,8 @@ __metadata:
     "@contentful/rich-text-types": "npm:^17.2.5"
     bootstrap: "npm:^5.2.3"
     contentful: "npm:^11.10.3"
+    contentful-management: "npm:^11.72.1"
+    dotenv: "npm:^17.3.1"
     emailjs-com: "npm:^3.2.0"
     gh-pages: "npm:^6.2.0"
     next: "npm:^16.1.6"

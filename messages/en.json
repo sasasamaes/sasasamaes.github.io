@@ -88,7 +88,8 @@
     "description": "Articles about Web3, Blockchain, Full Stack Development, and more.",
     "noPosts": "No posts yet. Check back soon!",
     "readMore": "Read more",
-    "backToBlog": "Back to Blog"
+    "backToBlog": "Back to Blog",
+    "allPosts": "All"
   },
   "portfolio": {
     "pageTitle": "Portfolio",
