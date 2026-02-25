@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./style.css";
 import {
@@ -12,7 +13,7 @@ import {
   FaTiktok,
   FaCircle
 } from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { useTranslations } from "next-intl";
 
 const ICON_MAPPING = {
   default: FaCircle,
@@ -28,6 +29,9 @@ const ICON_MAPPING = {
 };
 
 export const Socialicons = (params) => {
+  const t = useTranslations();
+  const socialprofils = t.raw("social");
+
   return (
     <div className="stick_follow_icon">
       <ul>
@@ -42,7 +46,7 @@ export const Socialicons = (params) => {
           );
         })}
       </ul>
-      <p>Follow Me</p>
+      <p>{t("footer.followMe")}</p>
     </div>
   );
 };

@@ -1,19 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
-
+"use client";
+import { useEffect, useState } from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
+import "./style.css";
 
 const Themetoggle = () => {
-  const [theme, settheme] = useState(localStorage.getItem("theme"));
-  const themetoggle = () => {
-    settheme(theme === "dark" ? "light" : "dark");
-  };
+  const [theme, setTheme] = useState("dark");
+
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme ); 
-  }, [theme]);
+    const saved = localStorage.getItem("theme") || "dark";
+    setTheme(saved);
+  }, []);
+
+  const toggle = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  };
+
   return (
-    <div className="nav_ac" onClick={themetoggle}>
-      <WiMoonAltWaningCrescent4 />
+    <div className="theme-switch">
+      <button
+        className={`theme-switch__toggle ${theme === "light" ? "theme-switch--light" : ""}`}
+        onClick={toggle}
+        aria-label="Toggle theme"
+      >
+        <div className="theme-switch__circle">
+          {theme === "dark" ? <FiMoon /> : <FiSun />}
+        </div>
+      </button>
     </div>
   );
 };
