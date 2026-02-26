@@ -3,6 +3,8 @@ import { getAllPosts } from "@/lib/contentful";
 import "./blog.css";
 import BlogClient from "./BlogClient";
 
+export const revalidate = 60;
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
@@ -21,7 +23,7 @@ export default async function BlogPage({ params }) {
 
   let posts = [];
   try {
-    posts = await getAllPosts();
+    posts = await getAllPosts(locale);
   } catch (e) {
     console.error("Failed to fetch posts:", e);
     posts = [];

@@ -19,7 +19,31 @@ function getClient() {
   });
 }
 
-export async function getAllPosts() {
+// Map next-intl locales to Contentful locales
+const LOCALE_MAP = {
+  en: "en-US",
+  es: "es-419",
+};
+
+function getContentfulLocale(locale) {
+  return LOCALE_MAP[locale] || "en-US";
+}
+
+function mapItem(item) {
+  return {
+    title: item.fields.title,
+    slug: item.fields.slug,
+    excerpt: item.fields.excerpt,
+    content: item.fields.content,
+    coverImage: item.fields.coverImage?.fields?.file?.url
+      ? `https:${item.fields.coverImage.fields.file.url}`
+      : null,
+    tags: item.fields.tags || [],
+    publishedDate: item.fields.publishedDate,
+  };
+}
+
+export async function getAllPosts(locale = "en") {
   const client = getClient();
   if (!client) return [];
 
@@ -27,26 +51,17 @@ export async function getAllPosts() {
     const entries = await client.getEntries({
       content_type: "blog",
       order: ["-fields.publishedDate"],
+      locale: getContentfulLocale(locale),
     });
 
-    return entries.items.map((item) => ({
-      title: item.fields.title,
-      slug: item.fields.slug,
-      excerpt: item.fields.excerpt,
-      content: item.fields.content,
-      coverImage: item.fields.coverImage?.fields?.file?.url
-        ? `https:${item.fields.coverImage.fields.file.url}`
-        : null,
-      tags: item.fields.tags || [],
-      publishedDate: item.fields.publishedDate,
-    }));
+    return entries.items.map(mapItem);
   } catch (error) {
     console.error("Contentful getAllPosts error:", error.message);
     return [];
   }
 }
 
-export async function getPostBySlug(slug) {
+export async function getPostBySlug(slug, locale = "en") {
   const client = getClient();
   if (!client) return null;
 
@@ -55,22 +70,11 @@ export async function getPostBySlug(slug) {
       content_type: "blog",
       "fields.slug": slug,
       limit: 1,
+      locale: getContentfulLocale(locale),
     });
 
     if (!entries.items.length) return null;
-
-    const item = entries.items[0];
-    return {
-      title: item.fields.title,
-      slug: item.fields.slug,
-      excerpt: item.fields.excerpt,
-      content: item.fields.content,
-      coverImage: item.fields.coverImage?.fields?.file?.url
-        ? `https:${item.fields.coverImage.fields.file.url}`
-        : null,
-      tags: item.fields.tags || [],
-      publishedDate: item.fields.publishedDate,
-    };
+    return mapItem(entries.items[0]);
   } catch (error) {
     console.error("Contentful getPostBySlug error:", error.message);
     return null;

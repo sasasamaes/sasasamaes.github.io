@@ -4,6 +4,8 @@ import { getPostBySlug, getAllSlugs } from "@/lib/contentful";
 import BlogPostClient from "./BlogPostClient";
 import "./post.css";
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
   return slugs.map((slug) => ({ slug }));
@@ -12,7 +14,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { locale, slug } = await params;
   const t = await getTranslations({ locale });
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug, locale);
   if (!post) return {};
   return {
     title: `${post.title} | ${t("meta.title")}`,
@@ -27,7 +29,7 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug, locale);
   if (!post) notFound();
 
   return <BlogPostClient post={post} />;
