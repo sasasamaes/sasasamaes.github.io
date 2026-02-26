@@ -36,11 +36,22 @@
   gap: 2rem;
 }
 
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card-link:hover {
+  color: inherit;
+}
+
 .post-card {
   border: 1px solid var(--secondary-color);
   padding: 0;
   transition: 0.3s ease;
   background: var(--primary-color);
+  cursor: pointer;
 }
 
 .post-card:hover {
@@ -86,10 +97,10 @@
   border: 1px solid var(--secondary-color);
 }
 
-.post-card .card-body a {
+.post-card .card-body .read-more {
   color: var(--text-color);
   border: solid 1px var(--text-color);
   padding: 4px 12px;
-  text-decoration: none;
   font-size: 0.9rem;
+  display: inline-block;
 }
