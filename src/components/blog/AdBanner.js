@@ -3,7 +3,11 @@ import { useEffect, useRef } from "react";
 
 export default function AdBanner({ slot, format = "auto", responsive = true }) {
   const adRef = useRef(null);
+
+  const isPlaceholder = !slot || slot.startsWith("YOUR_");
+
   useEffect(() => {
+    if (isPlaceholder) return;
     try {
       if (typeof window !== "undefined" && adRef.current) {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -11,7 +15,9 @@ export default function AdBanner({ slot, format = "auto", responsive = true }) {
     } catch (e) {
       console.error("AdSense error:", e);
     }
-  }, []);
+  }, [isPlaceholder]);
+
+  if (isPlaceholder) return null;
 
   return (
     <div style={{ margin: "2rem 0", textAlign: "center" }}>
