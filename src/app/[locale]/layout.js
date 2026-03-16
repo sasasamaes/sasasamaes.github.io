@@ -31,6 +31,9 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale}>
       <head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Marcellus&display=swap" rel="stylesheet" />
+      </head>
+      <body>
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -42,9 +45,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TZQ8CMJ6');`,
           }}
         />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Marcellus&display=swap" rel="stylesheet" />
-      </head>
-      <body>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TZQ8CMJ6"
