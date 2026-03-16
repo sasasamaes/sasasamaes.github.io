@@ -27,17 +27,27 @@ export default function BlogPostClient({ post }) {
           <div className="post-header">
             <h1>{post.title}</h1>
             <p className="post-meta">
-              {new Date(post.publishedDate).toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" })}
+              {new Date(post.publishedDate).toLocaleDateString(locale, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
             </p>
             <div className="post-tags">
-              {post.tags.map((tag) => (<span key={tag} className="tag">{tag}</span>))}
+              {post.tags.map((tag) => (
+                <span key={tag} className="tag">
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
           {post.coverImage && <img src={post.coverImage} alt={post.title} className="post-cover" />}
-          <AdBanner slot="YOUR_AD_SLOT_1" />
+          <AdBanner slot="4797945075" />
           <PostContent content={post.content} />
-          <AdBanner slot="YOUR_AD_SLOT_2" />
-          <Link href="/blog" className="back-link">&larr; {t("blog.backToBlog")}</Link>
+          <AdBanner slot="4797945075" />
+          <Link href="/blog" className="back-link">
+            &larr; {t("blog.backToBlog")}
+          </Link>
         </Col>
       </Row>
     </Container>
