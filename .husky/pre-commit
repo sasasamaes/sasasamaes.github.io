@@ -1,0 +1,8 @@
+npx lint-staged
+
+# Validate build only if JS/JSX/MJS files are staged
+STAGED_JS=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(js|jsx|mjs)$' || true)
+if [ -n "$STAGED_JS" ]; then
+  echo "JS files changed — validating build..."
+  npx next build
+fi
