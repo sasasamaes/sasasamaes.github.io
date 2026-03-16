@@ -44,7 +44,7 @@ export default function BlogPostClient({ post }) {
           {post.coverImage && <img src={post.coverImage} alt={post.title} className="post-cover" />}
           <AdBanner slot="4797945075" />
           <PostContent content={post.content} />
-          <AdBanner slot="4797945075" />
+          <AdBanner slot="8270286220" />
           <Link href="/blog" className="back-link">
             &larr; {t("blog.backToBlog")}
           </Link>
