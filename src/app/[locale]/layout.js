@@ -6,6 +6,7 @@ import { Socialicons } from "@/components/socialicons";
 import ThemeProvider from "@/components/themetoggle/ThemeProvider";
 import AnimatedCursorWrapper from "@/components/AnimatedCursorWrapper";
 import Script from "next/script";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -69,6 +70,7 @@ gtag('config', 'G-QMX4S3JFBC');`,
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
+            <AnalyticsTracker />
             <AnimatedCursorWrapper />
             <Headermain />
             <div className="s_c">

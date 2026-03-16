@@ -1,13 +1,24 @@
 "use client";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslations, useLocale } from "next-intl";
 import PostContent from "@/components/blog/PostContent";
 import AdBanner from "@/components/blog/AdBanner";
 import { Link } from "@/i18n/navigation";
+import { event } from "@/lib/analytics";
 
 export default function BlogPostClient({ post }) {
   const t = useTranslations();
   const locale = useLocale();
+
+  useEffect(() => {
+    event("blog_post_view", {
+      post_title: post.title,
+      post_slug: post.slug,
+      post_tags: post.tags?.join(", "),
+      locale,
+    });
+  }, [post.title, post.slug, post.tags, locale]);
 
   return (
     <Container>

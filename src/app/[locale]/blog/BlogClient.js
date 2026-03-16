@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslations } from "next-intl";
 import PostCard from "@/components/blog/PostCard";
+import { event } from "@/lib/analytics";
 
 export default function BlogClient({ posts }) {
   const t = useTranslations();
@@ -31,7 +32,7 @@ export default function BlogClient({ posts }) {
         <div className="blog-filters">
           <button
             className={`filter-tag ${activeTag === null ? "active" : ""}`}
-            onClick={() => setActiveTag(null)}
+            onClick={() => { setActiveTag(null); event("blog_filter", { tag: "all" }); }}
           >
             {t("blog.allPosts") || "Todos"}
           </button>
@@ -39,7 +40,7 @@ export default function BlogClient({ posts }) {
             <button
               key={tag}
               className={`filter-tag ${activeTag === tag ? "active" : ""}`}
-              onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+              onClick={() => { const newTag = activeTag === tag ? null : tag; setActiveTag(newTag); event("blog_filter", { tag: newTag || "all" }); }}
             >
               {tag}
             </button>
