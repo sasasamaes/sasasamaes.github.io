@@ -20,7 +20,9 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" href="/">{t("logotext")}</Link>
+          <Link className="navbar-brand nav_ac" href="/">
+            {t("logotext")}
+          </Link>
           <div className="d-flex align-items-center">
             <LanguageToggle />
             <Themetoggle />
@@ -34,11 +36,31 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item"><Link onClick={handleToggle} href="/" className="my-3">{t("nav.home")}</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/portfolio" className="my-3">{t("nav.portfolio")}</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/about" className="my-3">{t("nav.about")}</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/blog" className="my-3">{t("nav.blog")}</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} href="/contact" className="my-3">{t("nav.contact")}</Link></li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} href="/" className="my-3">
+                      {t("nav.home")}
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} href="/portfolio" className="my-3">
+                      {t("nav.portfolio")}
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} href="/about" className="my-3">
+                      {t("nav.about")}
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} href="/blog" className="my-3">
+                      {t("nav.blog")}
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} href="/contact" className="my-3">
+                      {t("nav.contact")}
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -48,6 +70,10 @@ const Headermain = () => {
               <a href={t("social.facebook")}>Facebook</a>
               <a href={t("social.github")}>Github</a>
               <a href={t("social.twitter")}>Twitter</a>
+            </div>
+            <div className="d-flex legal-links">
+              <Link href="/privacy">{t("privacy.pageTitle")}</Link>
+              <Link href="/terms">{t("terms.pageTitle")}</Link>
             </div>
             <p className="copyright m-0">{t("footer.copyright")}</p>
           </div>

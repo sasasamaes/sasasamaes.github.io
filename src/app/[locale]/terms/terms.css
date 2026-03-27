@@ -1,0 +1,20 @@
+.terms-page h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.terms-page p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.terms-page ul,
+.terms-page ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.terms-page li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}

@@ -1,0 +1,43 @@
+.privacy-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.privacy-section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.privacy-section p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.privacy-section ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.privacy-section ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.privacy-section a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.privacy-section .last-updated {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}

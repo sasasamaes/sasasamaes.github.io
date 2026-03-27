@@ -14,7 +14,7 @@
       "second": "Desarrollo apps blockchain y Web3",
       "third": "Soy Sensei en Dev.f"
     },
-    "description": "Desarrollador Full Stack con experiencia en Web3, Blockchain, Next.js, TypeScript, Cairo y Solidity. Habil en la construccion de dApps, integracion de IA, y trabajo con MongoDB y PostgreSQL para soluciones escalables. Apasionado por crear experiencias digitales seguras e innovadoras.",
+    "description": "Ingeniero de Software Full Stack con mas de 7 anos de experiencia. Actualmente construyendo plataformas descentralizadas en Zubari.io, y fundador de WallyPay — una plataforma digital de remesas para Latinoamerica. Experto en React, Next.js, TypeScript, Solidity, Node.js, AWS y tecnologias blockchain.",
     "yourImgUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFk2oVtP_WTNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666820900761?e=1736380800&v=beta&t=AA_Ia7gFpzb6vJt7Y5jWENh7LFtz74yjOx90CWlkWYk",
     "btnPortfolio": "Mi Portafolio",
     "btnContact": "Contactame"
@@ -22,52 +22,169 @@
   "about": {
     "pageTitle": "Acerca de mi",
     "title": "Acerca de mi",
-    "aboutme": "Desarrollador Full Stack experimentado especializado en soluciones Web3 y Blockchain, con dominio de Next.js, TypeScript, Cairo y Solidity. Habil en el desarrollo de aplicaciones descentralizadas (dApps) y contratos inteligentes con un profundo conocimiento de los ecosistemas front-end y back-end. Solida experiencia en integracion de IA, mejorando aplicaciones con conocimientos basados en datos y automatizacion. Amplia experiencia con bases de datos como MongoDB y PostgreSQL, garantizando soluciones de almacenamiento robustas y escalables. Apasionado por aprovechar la tecnologia de vanguardia para construir experiencias digitales seguras e innovadoras.",
+    "aboutme": "Ingeniero de Software Full Stack con mas de 7 anos de experiencia construyendo aplicaciones web y mas de 2 anos especializandome en Web3 y Blockchain. Actualmente desarrollo plataformas descentralizadas con contratos inteligentes en Solidity, SDKs multi-chain y arquitecturas modernas de backend/frontend (Express.js, Prisma, PostgreSQL, Next.js 15/16, React 19). Fundador de WallyPay, una plataforma digital de remesas para Latinoamerica. Contribuidor activo de codigo abierto a traves de OnlyDust, y Sensei en Dev.f donde mentoreo a la proxima generacion de desarrolladores. Experiencia con infraestructura cloud en AWS (ECS, RDS, S3), pipelines CI/CD y flujos de desarrollo asistidos por IA. Basado en Costa Rica, trabajando remotamente con equipos internacionales.",
     "workTimelineTitle": "Experiencia Laboral",
     "skillsTitle": "Habilidades",
     "servicesTitle": "Servicios"
   },
   "worktimeline": [
-    { "jobtitle": "Desarrollador Open Source", "where": "Only Dust", "url": "https://onlydust.com", "date": "2024" },
-    { "jobtitle": "Sensei", "where": "DEV.f", "url": "https://devf.mx", "date": "2019 - 2024" },
-    { "jobtitle": "Desarrollador Frontend", "where": "Elevar Salud", "url": "https://www.elevarsalud.com", "date": "2023 - 2024" },
-    { "jobtitle": "Desarrollador Full Stack", "where": "Arrenda", "url": "https://ziff.com.mx", "date": "2022 - 2023" },
-    { "jobtitle": "Desarrollador Frontend", "where": "Gamanza", "url": "https://gamanza.com", "date": "2019 - 2021" },
-    { "jobtitle": "Mentor Estudiantil", "where": "GDG Pura Vida", "url": "https://gdg.community.dev/gdg-pura-vida/", "date": "2020" },
-    { "jobtitle": "Desarrollador Frontend", "where": "CreativeDrive", "url": "https://www.linkedin.com/company/wearecd/posts/?feedView=all", "date": "2017 - 2019" }
+    {
+      "jobtitle": "Desarrollador de Software",
+      "where": "Zubari.io",
+      "url": "https://www.zubari.io",
+      "date": "2025 - Presente"
+    },
+    {
+      "jobtitle": "Fundador y Desarrollador Full Stack",
+      "where": "WallyPay",
+      "url": "https://www.wallypay.lat",
+      "date": "2025 - Presente"
+    },
+    {
+      "jobtitle": "Desarrollador Open Source",
+      "where": "OnlyDust",
+      "url": "https://onlydust.com",
+      "date": "2024 - 2025"
+    },
+    {
+      "jobtitle": "Community Lead / Sensei",
+      "where": "Dev.f",
+      "url": "https://devf.la",
+      "date": "2019 - Presente"
+    },
+    {
+      "jobtitle": "Desarrollador Frontend",
+      "where": "Elevar Salud",
+      "url": "https://www.elevarsalud.com",
+      "date": "2023 - 2024"
+    },
+    {
+      "jobtitle": "Desarrollador Full Stack",
+      "where": "Arrenda",
+      "url": "https://ziff.com.mx",
+      "date": "2022 - 2023"
+    },
+    {
+      "jobtitle": "Desarrollador Frontend",
+      "where": "Gamanza",
+      "url": "https://gamanza.com",
+      "date": "2019 - 2021"
+    },
+    {
+      "jobtitle": "Mentor Estudiantil",
+      "where": "GDG Pura Vida",
+      "url": "https://gdg.community.dev/gdg-pura-vida/",
+      "date": "2020"
+    },
+    {
+      "jobtitle": "Desarrollador Frontend",
+      "where": "CreativeDrive",
+      "url": "https://www.linkedin.com/company/wearecd/posts/?feedView=all",
+      "date": "2017 - 2019"
+    }
   ],
   "skills": [
-    { "name": "Javascript", "value": 100 },
-    { "name": "React", "value": 90 },
-    { "name": "Next.js", "value": 90 },
-    { "name": "TypeScript", "value": 90 },
-    { "name": "Python", "value": 65 },
-    { "name": "Django", "value": 60 },
-    { "name": "Php", "value": 80 },
-    { "name": "Cairo", "value": 60 },
-    { "name": "PostgreSQL", "value": 60 },
-    { "name": "MongoDB", "value": 60 },
-    { "name": "Solidity", "value": 60 },
-    { "name": "UML", "value": 80 },
-    { "name": "Scrum", "value": 100 },
-    { "name": "Modelo Entidad", "value": 100 },
-    { "name": "IA", "value": 80 },
-    { "name": "StarkNet", "value": 60 },
-    { "name": "Open Source", "value": 70 }
+    { "name": "JavaScript", "value": 100 },
+    { "name": "TypeScript", "value": 95 },
+    { "name": "React / Next.js", "value": 95 },
+    { "name": "Node.js / Express.js", "value": 90 },
+    { "name": "Solidity / Hardhat", "value": 75 },
+    { "name": "Prisma / PostgreSQL", "value": 85 },
+    { "name": "AWS (ECS, RDS, S3)", "value": 75 },
+    { "name": "Docker", "value": 70 },
+    { "name": "Python / Django", "value": 65 },
+    { "name": "Cairo / StarkNet", "value": 60 },
+    { "name": "Vue.js", "value": 70 },
+    { "name": "IA / Prompt Engineering", "value": 85 },
+    { "name": "Scrum / Agile", "value": 95 },
+    { "name": "Git / CI-CD", "value": 90 },
+    { "name": "Open Source", "value": 80 }
   ],
   "services": [
-    { "title": "Web3 y Blockchain", "description": "Ofrezco servicios integrales de desarrollo Web3 y Blockchain, enfocados en crear aplicaciones descentralizadas (dApps) y contratos inteligentes seguros, escalables y faciles de usar. Con experiencia en Solidity, Cairo y frameworks modernos de blockchain, desarrollo soluciones para Ethereum, StarkNet y otras redes, incluyendo tokenizacion, NFTs y proyectos DeFi. Mis servicios garantizan experiencias digitales transparentes y optimizadas, guiando proyectos desde el concepto hasta el despliegue con un fuerte enfasis en seguridad, rendimiento y usabilidad en el mundo real." },
-    { "title": "Desarrollo Full Stack", "description": "Proporciono servicios de Desarrollo Full Stack enfocados en entregar aplicaciones web dinamicas, responsivas y escalables. Con experiencia en frameworks modernos como Next.js y TypeScript, creo experiencias de usuario fluidas en el front-end, mientras aseguro un manejo eficiente de datos y funcionalidad robusta en el back-end. Competente en bases de datos relacionales y no relacionales como PostgreSQL y MongoDB, construyo soluciones que priorizan la seguridad, el rendimiento y la usabilidad. Mi enfoque se basa en aprovechar las mejores practicas y las tecnologias mas recientes para entregar soluciones digitales innovadoras adaptadas a las necesidades unicas de cada proyecto." },
-    { "title": "Sensei", "description": "Como Sensei en DEV.F, guio y oriento a desarrolladores aspirantes, compartiendo conocimientos y experiencia practica en tecnologias Full Stack y Web3. A traves de talleres, revisiones de codigo y retroalimentacion personalizada, ayudo a los estudiantes a construir una base tecnica solida y habilidades practicas en areas como JavaScript, Next.js, TypeScript y Blockchain. Mi objetivo es empoderar a los desarrolladores para resolver problemas del mundo real de manera efectiva, fomentar un ambiente de aprendizaje colaborativo e inspirar el crecimiento continuo y la innovacion en la comunidad tecnologica." }
+    {
+      "title": "Desarrollo Web3 y Blockchain",
+      "description": "Diseno e implemento contratos inteligentes (Solidity, Cairo), SDKs multi-chain y aplicaciones descentralizadas. Experiencia construyendo tokens ERC-721/ERC-1155, sistemas de suscripcion, herramientas DeFi e integraciones cross-chain en Ethereum, Bitcoin, TON, TRON, Solana y StarkNet. Desde la arquitectura hasta el despliegue, entrego soluciones Web3 seguras y listas para produccion."
+    },
+    {
+      "title": "Desarrollo Full Stack",
+      "description": "Desarrollo de aplicaciones web de principio a fin usando Next.js, React, TypeScript en el frontend y Node.js, Express.js, Prisma, PostgreSQL en el backend. Construyo con principios de Clean Architecture, despliego en AWS (ECS, RDS, S3) y Vercel, e implemento pipelines CI/CD, internacionalizacion (i18n), analytics y optimizacion SEO."
+    },
+    {
+      "title": "FinTech y Plataformas Digitales",
+      "description": "Construyo productos de tecnologia financiera como WallyPay, una plataforma digital de remesas para Latinoamerica. Experiencia con integraciones de pago, sistemas de wallet, PWAs, autenticacion de usuarios y diseno mobile-first para servicios financieros."
+    },
+    {
+      "title": "Mentoria y Ensenanza",
+      "description": "Como Sensei en Dev.f, mentoreo desarrolladores a traves de bootcamps de programacion cubriendo JavaScript, React, Node.js y tecnologias Web3. Lidero talleres, revisiones de codigo y eventos comunitarios, ayudando a ingenieros aspirantes a construir bases tecnicas solidas y experiencia en proyectos reales."
+    }
   ],
   "dataportfolio": [
-    { "title": "Only Dust", "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png", "description": "Cada mes, participo en hackathons de Only Dust, contribuyendo a proyectos blockchain de codigo abierto, construyendo soluciones Web3 y colaborando para enfrentar desafios del mundo real en tecnologia descentralizada.", "link": "https://onlydust.com" },
-    { "title": "ETH Pura Vida Hackaton", "img": "https://i.postimg.cc/Y9t7XtnJ/Screenshot-2024-11-06-at-1-09-02-AM.png", "description": "Crear una herramienta financiera descentralizada que facilite el acceso a fideicomisos para agricultores y trabajadores agricolas en general en Costa Rica, a traves de los recursos proporcionados por la tecnologia BlockChain.", "link": "https://devfolio.co/projects/revolutionary-farmers-b88c" },
-    { "title": "DEV.f", "img": "https://i.postimg.cc/Dwhx4mSk/devf.png", "description": "Como Sensei en DEV.F, guio a desarrolladores aspirantes, ofreciendo orientacion en tecnologias Full Stack y Web3. A traves de talleres y revisiones de codigo, ayudo a los estudiantes a desarrollar habilidades tecnicas solidas en JavaScript, html, js, css.", "link": "https://devf.mx" },
-    { "title": "StarkHack Hackathon", "img": "https://i.postimg.cc/g2KNVdhw/starkhack.png", "description": "Participe en un hackathon en linea donde desarrollamos un producto para una academia enfocada en aprender Starknet y Cairo.", "link": "https://ethglobal.com/showcase/ninja-academy-hvt1d" },
-    { "title": "Elevar Salud", "img": "https://i.postimg.cc/ZRWHzdM3/elevar-Salud.png", "description": "Contribui en todas las etapas del ciclo de vida del desarrollo de software, ayudando a disenar y desarrollar dos aplicaciones clave de telemedicina para pacientes y medicos usando React, Next.js y TypeScript.", "link": "https://www.elevarsalud.com" },
-    { "title": "Arrenda", "img": "https://i.postimg.cc/BZdYsmsv/arrenda.png", "description": "En Arrenda, mi rol abarco tanto el desarrollo frontend como backend, donde contribui al diseno y creacion de modulos usando Node.js y Vue.js.", "link": "https://ziff.com.mx/" },
-    { "title": "Gamanza", "img": "https://i.postimg.cc/q7MQQYc1/gamanza.png", "description": "Desarrolle sistemas CRM especializados para la industria de casinos, desde el diseno hasta la implementacion, mejorando la interaccion con el cliente y optimizando las operaciones.", "link": "https://gamanza.com/real-time-crm/" }
+    {
+      "title": "Zubari.io",
+      "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png",
+      "description": "Plataforma descentralizada de suscripcion y monetizacion de contenido. Disene 12+ contratos inteligentes en Solidity (ERC-721, ERC-1155), construi SDK multi-chain soportando Ethereum, Bitcoin, TON, TRON y Solana. Full stack con Next.js 15, Express.js, Prisma, PostgreSQL, desplegado en AWS.",
+      "link": "https://www.zubari.io"
+    },
+    {
+      "title": "WallyPay",
+      "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png",
+      "description": "Plataforma digital de remesas para Latinoamerica — 'Remesas con Proposito'. Construida como PWA con Next.js (App Router, Turbopack), React, TypeScript, con autenticacion, wallet digital y diseno mobile-first.",
+      "link": "https://www.wallypay.lat"
+    },
+    {
+      "title": "Spokn",
+      "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png",
+      "description": "Plataforma de conocimiento compartido basada en blockchain Stellar. Los miembros proponen charlas tech, votan con tokens TALK, y compensan a ponentes con pagos USDC via escrow no-custodial con Trustless Work. Desarrollado en colaboracion durante la clase de BAF junto a Nayib.",
+      "link": "https://spokn-web.vercel.app"
+    },
+    {
+      "title": "Mobil3 Hackathon",
+      "img": "https://i.postimg.cc/g2KNVdhw/starkhack.png",
+      "description": "4to lugar en la categoria de Pagos en el Mobil3 Hackathon en Mexico. Desarrolle una solucion de pagos blockchain en Monad, compitiendo contra los mejores equipos Web3 de Latinoamerica.",
+      "link": "#"
+    },
+    {
+      "title": "OnlyDust",
+      "img": "https://i.postimg.cc/g0Ss7DNm/onlydust.png",
+      "description": "Contribuidor activo de codigo abierto. Maintainer del proyecto Web3 Revolutionary Farmer, gestionando comunidad y contribuyendo a proyectos blockchain en el ecosistema Starknet.",
+      "link": "https://onlydust.com"
+    },
+    {
+      "title": "ETH Pura Vida Hackathon",
+      "img": "https://i.postimg.cc/Y9t7XtnJ/Screenshot-2024-11-06-at-1-09-02-AM.png",
+      "description": "Herramienta financiera descentralizada para facilitar el acceso a fideicomisos para agricultores en Costa Rica usando tecnologia blockchain en el hackathon ETH Pura Vida.",
+      "link": "https://devfolio.co/projects/revolutionary-farmers-b88c"
+    },
+    {
+      "title": "StarkHack Hackathon",
+      "img": "https://i.postimg.cc/g2KNVdhw/starkhack.png",
+      "description": "Desarrolle Ninja Academy, una plataforma de aprendizaje para Starknet y Cairo durante el hackathon online ETHGlobal StarkHack.",
+      "link": "https://ethglobal.com/showcase/ninja-academy-hvt1d"
+    },
+    {
+      "title": "Elevar Salud",
+      "img": "https://i.postimg.cc/ZRWHzdM3/elevar-Salud.png",
+      "description": "Disene y desarrolle dos aplicaciones de telemedicina — una para pacientes y otra para medicos — habilitando comunicacion y recopilacion de informacion medica critica usando React, Next.js y TypeScript.",
+      "link": "https://www.elevarsalud.com"
+    },
+    {
+      "title": "Arrenda",
+      "img": "https://i.postimg.cc/BZdYsmsv/arrenda.png",
+      "description": "Desarrollo full stack para una plataforma de gestion de alquileres y propiedades, construyendo modulos frontend y backend usando Node.js y Vue.js.",
+      "link": "https://ziff.com.mx/"
+    },
+    {
+      "title": "Gamanza",
+      "img": "https://i.postimg.cc/q7MQQYc1/gamanza.png",
+      "description": "Desarrolle sistemas CRM especializados para la industria de casinos, desde el diseno hasta la implementacion, mejorando la interaccion con el cliente y optimizando las operaciones.",
+      "link": "https://gamanza.com/real-time-crm/"
+    },
+    {
+      "title": "Dev.f Sensei",
+      "img": "https://i.postimg.cc/Dwhx4mSk/devf.png",
+      "description": "Mentoria a desarrolladores aspirantes a traves de bootcamps de programacion, ensenando JavaScript, React, Node.js y tecnologias Web3 mediante talleres, revisiones de codigo y eventos comunitarios.",
+      "link": "https://devf.la"
+    }
   ],
   "contact": {
     "pageTitle": "Contacto",
@@ -116,8 +233,16 @@
     "templateId": "template_id",
     "userId": "user_id"
   },
+  "terms": {
+    "pageTitle": "Terminos de Servicio",
+    "metaDescription": "Terminos de Servicio de francampos.me - el portafolio personal y blog de Francisco Javier Campos Diaz."
+  },
+  "privacy": {
+    "pageTitle": "Politica de Privacidad",
+    "metaDescription": "Politica de Privacidad de francampos.me — conoce como recopilamos, usamos y protegemos tu informacion."
+  },
   "meta": {
     "title": "Francisco Campos Diaz",
-    "description": "Soy un Desarrollador Full Stack apasionado por la Programacion, el Diseno y la Natacion."
+    "description": "Ingeniero de Software Full Stack especializado en Web3, Blockchain y desarrollo web moderno. Construyendo plataformas descentralizadas y productos digitales desde Costa Rica."
   }
 }
