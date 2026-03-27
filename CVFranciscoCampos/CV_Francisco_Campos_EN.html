@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francisco Javier Campos Diaz - Software Engineer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10px;
+    line-height: 1.45;
+    color: #333;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    display: flex;
+    position: relative;
+  }
+
+  /* Main content - left side */
+  .main {
+    flex: 1;
+    padding: 30px 25px 30px 35px;
+    padding-right: 200px;
+  }
+
+  /* Sidebar - right side */
+  .sidebar {
+    width: 195px;
+    background: #f5f5f5;
+    padding: 30px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 297mm;
+  }
+
+  /* Header */
+  .header h1 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  .header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  /* Profile photo */
+  .photo-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+    margin-top: 5px;
+    border: 3px solid #7c5cbf;
+  }
+
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #7c5cbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  /* Experience section */
+  .experience-section {
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: underline;
+  }
+
+  .job-company {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .job-date {
+    font-size: 9px;
+    color: #888;
+    margin-bottom: 3px;
+  }
+
+  .job-date a {
+    color: #7c5cbf;
+    text-decoration: underline;
+  }
+
+  .job-desc {
+    font-size: 9.5px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  /* Education */
+  .education-label {
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .edu-item h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #222;
+  }
+
+  .edu-item p {
+    font-size: 9.5px;
+    color: #555;
+  }
+
+  .edu-item .edu-year {
+    font-size: 9px;
+    color: #888;
+  }
+
+  /* Sidebar sections */
+  .sidebar-section {
+    margin-bottom: 18px;
+  }
+
+  .sidebar-section h3 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+
+  .sidebar-contact a {
+    display: block;
+    font-size: 9.5px;
+    color: #7c5cbf;
+    text-decoration: none;
+    margin-bottom: 3px;
+  }
+
+  .sidebar-contact .contact-item {
+    font-size: 9.5px;
+    color: #555;
+    margin-bottom: 3px;
+  }
+
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-list li {
+    font-size: 9.5px;
+    color: #555;
+    margin-bottom: 2px;
+  }
+
+  .sidebar-tech {
+    font-size: 9px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .social-item {
+    display: block;
+    font-size: 9px;
+    color: #555;
+    margin-bottom: 3px;
+    text-decoration: none;
+  }
+
+  .social-icon {
+    display: inline-block;
+    width: 12px;
+    color: #7c5cbf;
+    font-weight: 700;
+    font-size: 9px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="main">
+    <div class="header">
+      <h1>Hi! I'm Francisco<br>Javier Campos Diaz</h1>
+      <h2>Software Engineer</h2>
+    </div>
+
+    <div class="experience-section">
+      <div class="job">
+        <div class="job-title">Software Developer</div>
+        <div class="job-company"><a href="https://www.zubari.io/" style="color: #333; text-decoration: underline;">Zubari.io</a></div>
+        <div class="job-date">Sept 2025 - Present · Costa Rica/Remote</div>
+        <div class="job-desc">Full stack development of a decentralized content subscription and monetization platform. Designed and implemented 12+ Solidity smart contracts (ERC-721, ERC-1155, subscriptions, tips, payouts), built the multi-chain SDK (@zubari/sdk) on top of Tether WDK supporting Ethereum, Bitcoin, TON, TRON, and Solana, and developed the backend (Express.js, TypeScript, Prisma, PostgreSQL) with Clean Architecture and the frontend (Next.js 15, React 19). Infrastructure deployed on AWS (ECS, RDS, S3).</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Founder & Full Stack Developer</div>
+        <div class="job-company"><a href="https://www.wallypay.lat/" style="color: #333; text-decoration: underline;">WallyPay</a></div>
+        <div class="job-date">Personal Project · Costa Rica/Remote</div>
+        <div class="job-desc">Founded and developed WallyPay, a digital remittance platform for Latin America enabling secure cross-border money transfers. Built as a PWA with Next.js (App Router), React, and TypeScript, featuring user authentication, digital wallet system, and dark/light theming. Integrated Google Analytics (GA4/GTM) for tracking and optimized for mobile-first usage.</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Open Source Software Developer</div>
+        <div class="job-company"><a href="https://www.onlydust.com" style="color: #333; text-decoration: underline;">OnlyDust</a></div>
+        <div class="job-date">Oct 2024 - 2025 ·Costa Rica/Remote</div>
+        <div class="job-desc">Maintainer creating issues and managing a community for a Web3 project called Revolutionary Farmer, and contributor to various open source projects.</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Community Lead/Sensei</div>
+        <div class="job-company"><a href="https://devf.la/" style="color: #333; text-decoration: underline;">Dev.f</a></div>
+        <div class="job-date">Oct 2019 - Present · Costa Rica/Remote · Part Time</div>
+        <div class="job-desc">Managed community and event organization, and participated as a sensei teaching modules in coding bootcamps.</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Frontend Developer</div>
+        <div class="job-company">Elevar Salud</div>
+        <div class="job-date">Aug 2023 - May 2024 · Remote</div>
+        <div class="job-desc">Participated in all stages of the software development lifecycle, contributing to the design and development of two key applications: one for patients and one for physicians, enabling communication through telemedicine and collecting critical medical information. Used technologies such as React, Next.js, and TypeScript.</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Full Stack Developer</div>
+        <div class="job-company"><a href="https://ziff.com.mx/" style="color: #333; text-decoration: underline;">Arrenda</a></div>
+        <div class="job-date">Oct 2022 - Jun 2023 · Remote</div>
+        <div class="job-desc">At Arrenda, my role covered both frontend and backend development, contributing to the design and creation of modules using Node.js and Vue.js.</div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Frontend Developer</div>
+        <div class="job-company"><a href="https://gamanza.com/" style="color: #333; text-decoration: underline;">Gamanza</a></div>
+        <div class="job-date">Nov 2019 - Oct 2021 · Costa Rica</div>
+        <div class="job-desc">Developed specialized CRM systems for the casino industry, from design through implementation, improving client interaction and optimizing operations.</div>
+      </div>
+    </div>
+
+    <div class="education-label">EDUCATION</div>
+    <div class="education-grid">
+      <div class="edu-item">
+        <h4>Systems Engineering</h4>
+        <p>Cenfotec</p>
+        <p class="edu-year">2014</p>
+      </div>
+      <div class="edu-item">
+        <h4>SMPC</h4>
+        <p>CertiProf</p>
+        <p class="edu-year">2018</p>
+      </div>
+      <div class="edu-item">
+        <h4>Software Development</h4>
+        <p>Dev.f</p>
+        <p class="edu-year">2019</p>
+      </div>
+      <div class="edu-item">
+        <h4>Basecamp Starknet Foundation</h4>
+        <p>Dojo Coding - Starknet Foundation</p>
+        <p class="edu-year">2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <!-- Photo -->
+    <div style="text-align: center; margin-bottom: 15px;">
+      <div class="photo-container" style="display: inline-block; float: none;">
+        <img src="./yo.jpeg" alt="Francisco Campos" />
+      </div>
+    </div>
+
+    <div class="sidebar-section sidebar-contact">
+      <a href="mailto:hey@francampos.me">hey@francampos.me</a>
+      <div class="contact-item">+506 7219 9768</div>
+      <div class="contact-item">Nicoya, Costa Rica</div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Industry Knowledge</h3>
+      <ul class="sidebar-list">
+        <li>Startups</li>
+        <li>Blockchain</li>
+        <li>User Experience</li>
+        <li>Full Stack</li>
+        <li>Web3</li>
+        <li>AI</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Tools & Technologies</h3>
+      <div class="sidebar-tech">Jira, Notion, Git, JavaScript, TypeScript, HTML, CSS, ReactJS, Next.js, Redux Toolkit, Tailwind CSS, Php, Laravel, ChatGPT, Prompt Engineering, Material UI, Bootstrap, GraphQL, Node.js, TypeORM, PostgreSQL, Python, Django, Flask, Cairo, Starknet, Solidity, Hardhat, ethers.js, Prisma, Express.js, AWS, Redis, Docker</div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Languages</h3>
+      <ul class="sidebar-list">
+        <li>Spanish (native)</li>
+        <li>English (professional)</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Social</h3>
+      <a class="social-item" href="https://francampos.me"><span class="social-icon">f</span> francampos.me</a>
+      <a class="social-item" href="https://linkedin.com/in/francamposdiaz"><span class="social-icon">l</span> linkedin.com/in/francamposdiaz</a>
+      <a class="social-item" href="https://twitter.com/sasasamaes"><span class="social-icon">t</span> twitter/sasasamaes</a>
+      <a class="social-item" href="https://github.com/sasasamaes"><span class="social-icon">g</span> github.com/sasasamaes</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
